@@ -1,0 +1,9 @@
+services:
+  mongodb:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - prover_mongodb:/data/db
+volumes:
+  prover_mongodb:
